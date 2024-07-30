@@ -1,0 +1,497 @@
+#brand-main {
+    width: 100%;
+}
+
+.brand__story {
+    width: 100%;
+}
+
+/* 최상단 here now myself 배너 디자인 시작 */
+.brand__story__first {
+    position: relative; /* 부모 요소를 relative로 설정 */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand__story__first > .mobile__img {
+    display: none;
+}
+
+.brand__story__first > .pc__img {
+    width: 100%;
+}
+
+.phrases__wrap {
+    position: absolute;
+    padding: 0 0 0 12%;
+    display: flex;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.phrases {
+    display: flex;
+    flex-direction: column; /* 열 방향 정렬 */
+    align-items: center; /* 열 아이템 가운데 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    gap: 1rem;
+}
+
+.phrases img {
+    width: 25vw; /* 이미지 너비 */
+    height: auto;
+}
+
+.phrases > h2 {
+    font-weight: 600;
+    font-size: 2vw;
+    margin: 7% 0 0 0; /* 간격 조정 */
+}
+/* 최상단 here now myself 배너 디자인 종료 */
+
+/* -------------------------------------------------------------- */
+
+/* 컨템포러리 서울 배너 디자인 시작 */
+.brand__story__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    width: 100%;
+    background-color: black;
+}
+
+.brand__story__second > h2 {
+    font-size: 3.2vw;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    color: white;
+}
+
+.brand__story__second > p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    color: white;
+    margin-top: 2vw;
+}
+/* 컨템포러리 서울 배너 디자인 종료 */
+
+/* -------------------------------------------------------------- */
+
+/* 헤라 브랜드 아이덴티티 문구 디자인 시작 */
+.brand__story__third {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.brand__story__third > img {
+    width: 10vw;
+}
+
+.brand__indentity__phrase {
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.brand__indentity__phrase p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.brand__indentity__phrase p:last-child {
+    margin-top: 2vw;
+    line-height: 1.8;
+}
+/* 헤라 브랜드 아이덴티티 문구 디자인 종료 */
+
+/* -------------------------------------------------------------- */
+
+/* 헤라 유튜브 배너 디자인 시작 */
+.brand__story__fourth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+    background-color: black;
+}
+.brand__story__fourth > iframe {
+    width: 75%;
+    height: auto; /* height를 auto로 설정 */
+    aspect-ratio: 16 / 9; /* 원하는 비율로 설정 */
+}
+
+.brand__story__fourth > h2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin: 4vw 0;
+    line-height: 1.2;
+}
+
+.brand__story__fourth > h2 > img {
+    width: 8vw;
+    text-align: center;
+}
+
+.brand__story__fourth p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.8;
+    color: white;
+}
+
+.brand__story__fourth p:last-child {
+    margin-top: 1.2vw;
+}
+/* 헤라 유튜브 배너 디자인 종료 */
+
+/* -------------------------------------------------------------- */
+
+/* 헤라 상품이미지 dp 레이아웃 디자인 시작 */
+.brand__story__fifth {
+    width: 100%;
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.brand__story__fifth .img__container {
+    width: 100%;
+    padding: 0 5rem;
+    display: block;
+    position: relative;
+}
+
+.brand__story__fifth .img__container .img__wrap {
+    width: 100%;
+    padding: 40% 50%;
+    display: block;
+    position: relative;
+}
+
+
+.img__wrap img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 0%);
+}
+
+.img__wrap img:first-child {
+    width: 30%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    top: 0%;
+    left: 20%;
+    z-index: 999;
+}
+
+.img__wrap img:nth-child(2) {
+    width: 22%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    top: 16%;
+    left: 55%;
+    z-index: 888
+}
+
+.img__wrap img:nth-child(3) {
+    width: 30%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    top: 42%;
+    left: 4%;
+    z-index: 777;
+
+}
+
+.img__wrap img:nth-child(4) {
+    width: 26%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    top: 52%;
+    left: 38%;
+    z-index: 666;
+}
+
+.img__wrap img:last-child {
+    width: 20%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    top: 60%;
+    left: 68%;
+}
+
+.discription__wrap {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.discription__wrap > h2 {
+    font-size: 3.2vw;
+    font-weight: 700;
+    margin-bottom: 3vw;
+}
+
+.discription__wrap > p:nth-child(2) {
+    font-size: 1.8vw;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 3vw;
+}
+
+.discription__wrap > p:last-child {
+    font-size: 1.2vw;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+}
+/* 헤라 상품이미지 dp 레이아웃 디자인 종료 */
+
+/* -------------------------------------------------------------- */
+
+/* 헤라 브랜드 스토리 main 끝단 디자인 시작 */
+.brand__story__end {
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.end__wrap {
+    width: 100%;
+}
+
+.end__logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+}
+
+.end__logo img {
+    width: 24%;
+}
+
+.end__logo img:last-child {
+    width: 7vw;
+    margin-top: 4vw;
+}
+/* 헤라 브랜드 스토리 main 끝단 디자인 종료 */
+
+/* 미디어 쿼리 */
+@media all and (max-width:767px) {
+
+    .brand__story__first > .mobile__img {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .pc__img {
+        display: none;
+    }
+
+    .phrases__wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .phrases img {
+        width: 60vw;
+        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(324deg) brightness(106%) contrast(110%);
+    }
+
+    .phrases h2 {
+        color: white;
+        font-size: 5vw;
+    }
+
+    .brand__story__second {
+        padding: 20vw;
+    }
+
+    .brand__story__second h2{
+        font-size: 8vw;
+    }
+
+    .brand__story__second p {
+        padding: 0 4vw;
+        font-size: 3vw;
+        white-space: nowrap;
+        margin-top: 1.2rem;
+    }
+
+    .brand__story__third {
+        padding: 22vw 0;
+    }
+
+    .brand__story__third img {
+        width: 20vw;
+    }
+
+    .brand__indentity__phrase {
+        margin-top: 3rem;
+    }
+
+    .brand__indentity__phrase p:last-child {
+        white-space: nowrap;
+        margin-top: 1rem;
+    }
+
+    .brand__story__third p {
+        font-size: 3.4vw;
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+
+    .brand__story__fourth {
+        padding: 22vw 8vw;
+    }
+
+    .brand__story__fourth > iframe {
+        width: 100%;
+    }
+
+    .brand__story__fourth > h2 {
+        font-size: 8vw;
+        margin-top: 10vw;
+    }
+
+    .brand__story__fourth > h2 > img {
+        width: 20vw;
+    }
+
+    .brand__story__fourth > p {
+        font-size: 3.5vw;
+        white-space: nowrap;
+        margin-top: 4vw;
+    }
+
+    .brand__story__fifth {
+        padding: 20vw 10vw 20vw;
+    }
+    
+    .brand__story__fifth .img__container {
+        padding: 0 0 30%;
+    }
+    
+    .brand__story__fifth .img__container .img__wrap {
+        padding: 100% 50%;
+    }
+    
+    .img__wrap img:first-child {
+        width: 60%;
+        top: 0%;
+        left: 0%;
+        z-index: 999;
+    }
+    
+    .img__wrap img:nth-child(2) {
+        width: 48%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        top: 55%;
+        left: 52%;
+        z-index: 888
+    }
+    
+    .img__wrap img:nth-child(3) {
+        width: 55%;
+        top: 32%;
+        left: 45%;
+        z-index: 777;
+    
+    }
+    
+    .img__wrap img:nth-child(4) {
+        width: 55%;
+        top: 73%;
+        left: 6%;
+        z-index: 666;
+    }
+    
+    .img__wrap img:last-child {
+        width: 44%;
+        top: 41%;
+        left: 3%;
+    }
+    
+    .discription__wrap {
+        margin-top: 6vw;
+    }
+    
+    .discription__wrap > h2 {
+        font-size: 8vw;
+        margin-bottom: 5vw;
+    }
+    
+    .discription__wrap > p:nth-child(2) {
+        font-size: 4vw;
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+    
+    .discription__wrap > p:last-child {
+        font-size: 3.2vw;
+        line-height: 1.6;
+        margin-top: 5vw;
+        white-space: nowrap;
+    }
+
+    .brand__story__end {
+        width: 100%;
+        position: relative;
+        background-color: black;
+    }
+    
+    .end__wrap {
+        width: 100%;
+    }
+    
+    .end__logo {
+        width: 100%;
+        padding: 20vw 10vw;
+    }
+    
+    .end__logo img {
+        width: 60%;
+    }
+    
+    .end__logo img:last-child {
+        width: 18vw;
+        margin-top: 10vw;
+    }
+}

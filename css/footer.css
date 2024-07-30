@@ -1,0 +1,411 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+    border-top: 1px solid rgb(239, 239, 239);
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__info p {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #515151;
+}
+
+.footer__info small {
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.channel__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 1rem;
+}
+
+.channel__list li > a > img {
+    width: 2rem;
+}
+
+.footer__utils {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.footer__utils li a {
+    color: #515151;
+    margin-right: 0.7rem;
+}
+
+.footer__utils li::after {
+    content: '|';
+    font-size: 0.8rem;
+    color: #d8d8d8;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    color: #515151;
+}
+
+.copyright > a > img {
+    position: relative;
+    top: -0.3rem;
+    width: 3rem;
+}
+
+.footer__info a {
+    display: inline;
+}
+
+/* 드롭다운 버튼 디자인 시작 */
+.dropdown {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1vw;
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown > button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 286px;
+    padding: 0 30px 0 95px;
+    font-size: 0.9rem;
+    color: #515151;
+    cursor: pointer;
+}
+
+/* lang-select.js 적용되는 부분 */
+
+.dropdown > button::before {
+    content: 'LANGUAGE';
+    position: absolute;
+    left: 0;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    text-align: center;
+    color: #515151;
+}
+
+.dropdown > button::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+    transition: all 0.3s;
+    transform: rotate(var(--toggle-degree));
+}
+
+#language-select-list {
+    display: none;
+    flex-direction: column;
+    width: 282px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 0 1px 1px #3333335c;
+    position: absolute;
+    top: -11rem;
+}
+
+.show {
+    display: block !important;
+}
+
+:root {
+    --toggle-degree: 0deg;
+    --quick-degree: 45deg;
+    --lang-degree: 90deg;
+}
+
+/* lang-select.js 적용되는 부분 끝*/
+
+.current__option li {
+    padding: 0.8rem;
+}
+
+
+.dropdown ul li a {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.dropdown ul li::after {
+    content: '';
+}
+
+.dropdown__open {
+    background-color: #333;
+    color: white;
+}
+
+.footer__quick {
+    display: none;
+}
+
+.util__info__quick {
+    display: none;
+}
+
+@media all and (max-width:992px) {
+    #footer {
+        padding: 0;
+    }
+    
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .footer__utils {
+        display: none;
+        gap: 1.2rem;
+    }
+
+    .channel__list {
+        gap: 2rem;
+        margin: 0;
+        padding: 1rem;
+        border-bottom: 1px solid #efefef;
+    }
+
+    .channel__list li > a > img {
+        width: 1.4rem;
+    }
+
+    .footer__info > p {
+        display: none;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .footer__quick {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 3.649375rem;
+        padding: 0 1.4375rem;
+        border-bottom: 1px solid #efefef;
+
+        cursor: pointer;
+        position: relative;
+    }
+
+    .footer__quick > .copyright__quick > p{
+        width: 100%;
+        color: black;
+        font-family: 'noto-sans';
+        font-size: 0.8rem;
+    }
+
+    .footer__quick > .copyright__quick > p * {
+        font-family: 'noto-sans';
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .footer__quick > .copyright__quick > p::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        top: 40%;
+        right: 4.5%;
+        border-right: 1px solid #222;
+        border-bottom: 1px solid #222;
+        box-sizing: border-box;
+        transform: rotate(var(--quick-degree));
+        transition: all 0.3s;
+    }
+
+    .util__info__quick {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 0px;
+        list-style: none;
+        padding: 0 1.4375rem;
+        overflow: hidden;
+
+        transition: height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+
+    .util__info__quick.visible {
+        display: flex;
+        height: 230px;
+        padding: 1rem 1.4375rem;
+        transition: height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+
+    .util__info__quick.addLength {
+        height: 480px;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .util__info__quick.minusLength {
+        height: 230px;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .quick__util {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .quick__util li {
+        text-align: center;
+    }
+
+    .quick__util li::after {
+        content: '|';
+        margin-left: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .quick__util li:last-child::after {
+        content: '';
+    }
+
+    .quick__util li a {
+        font-size: 0.8rem;
+    }
+
+    .quick__cs__copyright {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .quick__cs__copyright p {
+        text-align: left;
+        font-size: 0.7rem;
+        font-weight: 3400;
+        line-height: 1.4;
+    }
+
+    .quick__cs__copyright > a > img{
+        width: 50px;
+        height: 36px;
+    }
+
+    .quick__lang {
+        width: 100%;
+        position: relative;
+    }
+
+    .lang__toggle {
+        width: 100%;
+        height: 47px;
+        border: 1px solid #d8d8d8;
+        padding: 0 1.1rem;
+        text-align: left;
+
+        cursor: pointer;
+    }
+
+    .quick__lang::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        width: 11px;
+        border-top: 1px solid #707070;
+    }
+
+    .quick__lang::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        width: 11px;
+        border-top: 1px solid #707070;
+
+        transform: rotate(var(--lang-degree));
+        transition: all 0.3s;
+    }
+
+    .quick__lang__select {
+        display: block;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0);
+        transition: height 0.5s ease-in-out, border 0.1s ease-in-out;
+    }
+
+    .quick__lang__select.display {
+        height: 234px;
+        border: 1px solid rgb(0, 0, 0);
+        transition: height 0.5s ease-in-out, border 0.1s ease-in-out;
+    }
+
+    .quick__lang__select li {
+        width: 100%;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ababab;
+    }
+
+    .quick__lang__select li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        margin-left: 1.1rem;
+    }
+
+    .quick__lang__select li:first-child {
+        background-color: #333;
+        border: none;
+    }
+
+    .quick__lang__select li:last-child {
+        border: none;
+    }
+
+    .quick__lang__select li:first-child a {
+        color: white;
+    }
+}

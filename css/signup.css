@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+.del_btn:focus {
+  outline: 3px dotted blue;
+}
+
+/* 헤더 */
+.header {
+  height: 55px;
+}
+
+.header_box {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #e6e6e6;;
+}
+
+.inner {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.inner h1 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 54px;
+  font-weight: 500;
+}
+
+.inner .del_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 54px;
+  background: url("../hera_img/btn_title_close.png") no-repeat 50% 50%;
+  background-size: 23px auto;
+  border: none;
+  cursor: pointer;
+}
+/* //헤더 */
+
+.login-kakao {
+  width: 100%;
+  height: 4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #FEEC49;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.login-kakao:hover {
+  filter: opacity(0.5);
+  transition: 1s;
+}
+
+.login-kakao-logo {
+  width: 1.25rem;
+  margin: 0 1rem;
+}
+
+.login-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.login-line-left {
+  width: 9rem;
+  border-top: 1px solid #d3d3d3;
+  align-self: center;
+}
+
+.login-line-right {
+  width: 9rem;
+  border-top: 1px solid #d3d3d3;
+  align-self: center;
+}
+
+.login-line-text {
+  font-size: 0.875rem;
+  font-weight: 100;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  margin: 40px auto;
+}
+
+.join-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid #d3d3d3;
+  border-radius: 1rem;
+  padding: 2.375rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.signup-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.inp-box {
+  border: 2px solid #e5e5e5;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.star-red {
+  font-size: 0.875rem;
+  color: red;
+  font-weight: 500;
+}
+
+.star-blue {
+  font-size: 0.875rem;
+  color: blue;
+  font-weight: 500;
+}
+
+.inp-name, .inp-email, .inp-birth, .inp-gender, .inp-pw, .inp-pw-re {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.inp-gender-radio {
+  margin: 0.5rem 0;
+}
+
+.inp-radio {
+  margin-right: 0.375rem;
+  border: 2px solid #fff;
+}
+
+.tell-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.certifi-button {
+  background-color: #e5e5e5;
+  border: none;
+  width: 20%;
+  height: 100%;
+  border-radius: 0.25rem;
+  padding: 0.75rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.tell-num {
+  display: flex;
+  justify-content: space-between;
+}
+
+.certifi-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.signup {
+  width: 100%;
+  height: 4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  background-color: #0040FF;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.select-tell {
+  border: 2px solid #e5e5e5;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.num-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.tell-bar {
+  width: auto;
+}
+
+.inp-select {
+  border: 2px solid #e5e5e5;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-width: 4rem;
+}

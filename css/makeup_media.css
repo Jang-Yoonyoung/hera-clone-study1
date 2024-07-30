@@ -1,0 +1,182 @@
+/*------------ 반응형 웹 ------------*/
+
+/*-- width : 가로 1340px 이하--*/
+@media (max-width: 1340px){
+    .makeup__visual__img{
+        width: 100%;
+        height: 41.7vw;
+        margin-bottom: 4rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .makeup__visual__pc{
+        display: block;
+        position: relative;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        object-position: 50%;
+    }
+
+    .maincategory__frame{
+        margin-top: 20px;
+    }
+}
+
+
+/*-- width : 가로 768px 이상 1279px 이하--*/
+@media (max-width: 1279px) and (min-width: 768px){
+
+    /* makeup__maincategory, findmore */
+    .makeup__maincategory, .makeup__findmore{
+        padding: 0 7%;
+    }
+
+    .makeup__visual__text{
+        margin-left: -7.5%;
+    }
+}
+
+
+/*-- width : 가로 784px 이하--*/
+@media (max-width: 784px){
+    .find_pc{
+        display: none;
+    }
+
+    .find_mo{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .find_slide{
+        position: relative;
+        max-width: 100%;    
+    }
+
+    .slides {
+        display: flex;
+        transition: all 4s ease-in-out;
+        flex-direction: column;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider-controls{
+        width: 100%;
+        margin-top: 20px;
+        }
+
+    .slider__dot .dot {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #767676;
+        text-indent: -9999px;
+        transition: all 0.3s;
+        margin: 0 2.5px;
+        cursor: pointer;
+    }
+    .slider__dot .dot.active {
+        background: #767676;
+    }
+}
+
+
+/*-- width : 가로 767px 이하 --*/
+@media (max-width: 767px){
+    #makeup-container div{
+        flex-direction: column;
+    }
+
+    #makeup-main{
+        justify-content: center;
+    }
+
+    /* makeup__visual */
+    .makeup__visual__img{
+        width: 100%;
+        height: 100vw;
+        margin-bottom: 4rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .makeup__visual__pc{
+        display: none;
+    }
+
+    .makeup__visual__mo{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .makeup__visualbox{
+        display: block;
+    }
+
+    .makeup__visual__text{
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: -35px;
+    }
+
+    .makeup__visual__textbox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .makeup__visual__textbox h2 {
+        text-align: center;
+    }
+
+
+     /* makeup__maincategory, findmore */
+    .makeup__maincategory, .makeup__findmore{
+        padding: 0 20px;
+    }
+
+
+    /* makeup__maincategory */
+    .maincategory__frame{
+        margin-top: 90px;
+        margin-bottom: 6rem;
+    }
+    .main__item:nth-child(2), .main__item:nth-child(3){
+        margin-top: 3rem;
+    }
+
+    .makeup__maincategory .main__item p{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 28px;
+        letter-spacing: -.05rem;
+        line-height: 1.5rem;
+    }
+
+    .makeup__maincategory .main__item p:hover{
+        text-decoration: none;
+    }
+
+    /* makeup__findmore */
+    .makeup__findmore .findmore__text span:hover{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+/**/
+.hidden {
+  display: none;
+}
+
+/**/
+
+/* 헤더 */
+.header {
+  height: 55px;
+}
+
+.header_box {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #e6e6e6;;
+}
+
+.inner {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.inner h1 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 54px;
+  font-weight: 500;
+}
+
+.inner .del_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 54px;
+  background: url("../hera_img/btn_title_close.png") no-repeat 50% 50%;
+  background-size: 23px auto;
+  border: none;
+  cursor: pointer;
+}
+/* //헤더 */
+
+/* 컨테이너 */
+.container {
+  max-width: 520px;
+  padding: 10px 20px 40px;
+  margin: 0 auto;
+}
+
+/* sec1 */
+.login_guide_text {
+  margin: 20px auto 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.view_keyboard {
+  text-align: right;
+  padding-bottom: 12px;
+}
+
+.view_keyboard_btn {
+  position: relative;
+  border: transparent;
+  background-color: transparent;
+  font-size: 16px;
+  padding-right: 24px;
+  color: #898989;
+  cursor: pointer;
+}
+
+.view_keyboard_btn:focus, .del_btn:focus, .inp_box:focus, 
+.login_etc li button:focus, .bottom_menu li a:focus{
+  outline: 3px dotted blue;
+}
+
+.icon {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 14px;
+  height: 8px;
+  background: url('../hera_img/btn_keyboard_open.png') no-repeat 0 0 / 14px auto;
+}
+
+.view_keyboard_img {
+  display: block;
+  padding-top: 12px;
+}
+
+.view_keyboard_img .key_img {
+  width: 100%;
+  border: 0;
+}
+
+/* //sec1 */
+
+/* sec2 */
+.input_field {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.inp_form {
+  margin-bottom: 14px;
+}
+
+.inp_form_box {
+  position: relative;
+}
+
+.inp_box {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+}
+
+.inp_del_btn {
+  display: none;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: url("../hera_img/btn_textfield_delete.png") no-repeat 50% 50%;
+  background-size: 14px auto;
+}
+
+/* 체크박스 */
+.check_form {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.check_form #check_id {
+  display: none;
+}
+
+.check_form .check_id_label {
+  position: relative;
+  display: inline-block;
+  height: 22px;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.check_form .check_id_label span {
+  line-height: 1.5;
+}
+
+.check_form .check_id_label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../hera_img/btn_check_off.png") no-repeat 0 0;
+  background-size: 100% auto;
+  width: 22px;
+  height: 22px;
+}
+
+.check_form #check_id:checked + .check_id_label::before {
+  background: url("../hera_img/btn_check_on.png");
+  background-size: 100% auto;
+}
+/* //체크박스 */
+
+.login_form button {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  background-color: #f0f0f0;
+  color: #c6c6c6;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+/* //sec2 */
+
+/* sec3 */
+.login_etc {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 17px;
+  border-bottom: 1px solid #e6e6e6;;
+}
+
+.login_etc li {
+  flex: 1;
+}
+
+.login_etc li button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.login_etc li button img {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+}
+
+.login_etc li button span {
+  margin-top: 20px;
+  margin: 20px auto 0;
+  font-size: 16px;
+}
+/* //sec3 */
+
+/* sec4 */
+.bottom_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #898989;
+}
+
+.bottom_menu li{
+  margin: 24px 10px;
+}
+
+.bottom_menu li a {
+  text-decoration: none;
+  color: #898989;
+}
+
+.bottom_menu :nth-child(2) {
+  margin: 0;
+}
+
+/* //sec4 */
+.signup_btn {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #c6c6c6;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+
+.signup_btn span {
+  float: left;
+}
+
+.signup_btn em {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  float: right;
+  padding-right: 14px;
+}
+
+.signup_btn em .icon2 {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 14%;
+  width: 8px;
+  height: 14px;
+  background: url("../hera_img/icon_signup_arrow.png") no-repeat 0 0 / 7px auto;
+}
+/* //sec4 */
+
+
+
+
+
+

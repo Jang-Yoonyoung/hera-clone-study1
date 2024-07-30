@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>헤라 로그인</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header_box">
+      <div class="inner">
+        <h1>로그인</h1>
+        <button class="del_btn" onclick="back()"></button>
+      </div>
+    </div>
+  </header>
+  <!-- //헤더 -->
+  
+  <!-- 컨테이너 -->
+  <section class="container">
+
+    <!-- sec1 -->
+    <div class="login_guide_text">
+      <span>
+        아모레퍼시픽 뷰티포인트 통합회원
+        <br>
+        아이디로 로그인해주세요.
+      </span>
+    </div>
+    <div class="view_keyboard">
+      <button class="view_keyboard_btn">
+        <p class="key_text">PC 키보드 열기</p>
+        <span class="icon"></span>
+      </button>
+      <span class="view_keyboard_img">
+        <img class="key_img hidden" src="../hera/hera_img/img_keyboard.png" alt="pc키보드열기">
+      </span>
+    </div>
+    <!-- //sec1 -->
+    
+    <!-- sec2 -->
+    <form action="#" class="input_field">
+      <div class="inp_form">
+        <div class="inp_form_box">
+          <input type="text" placeholder="아이디 입력" name="id" id="login_id" class="inp_box" autocomplete="off" >
+          <button class="inp_del_btn" id="login_id_del" onclick="clearId()"></button>
+        </div>
+      </div>
+      <div class="inp_form">
+        <div class="inp_form_box">
+          <input type="password" placeholder="비밀번호 입력(영문,숫자,특수문자 조합)" name="pw" id="login_pw" class="inp_box">
+          <button class="inp_del_btn" id="login_pw_del" onclick="clearPw()"></button>
+        </div>
+      </div>
+      <div class="check_form">
+        <input type="checkbox" id="check_id" name="check_id">
+        <label for="check_id" class="check_id_label"><span>아이디 저장</span></label>
+      </div>
+      <div class="login_form">
+        <button class="login_btn" disabled>로그인</button>
+      </div>
+    </form>
+    <!-- //sec2 -->
+    
+    <!-- sec3 -->
+    <ul class="login_etc">
+      <li>
+        <button>
+          <img src="../hera/hera_img/btn_login_mobile.png" alt="">
+          <span>휴대폰<br>로그인</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="../hera/hera_img/btn_login_ka.png" alt="">
+          <span>카카오<br>로그인</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="../hera/hera_img/btn_login_na.png" alt="">
+          <span>네이버<br>로그인</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="../hera/hera_img/btn_login_more.png" alt="">
+          <span>더보기</span>
+        </button>
+      </li>
+    </ul>
+    <!-- //sec3 -->
+    
+    <!-- sec4 -->
+    <ul class="bottom_menu">
+      <li><a href="#">아이디 찾기</a></li>
+      <li><span>|</span></li>
+      <li><a href="#">비밀번호 찾기</a></li>
+    </ul>
+    <!-- //sec4 -->
+    
+    <!-- sec5 -->
+    <button class="signup_btn" onclick="location.href ='hera_signup.html'">
+      <span>아직 회원이 아니세요?</span>
+      <em class="signup_btn_em">회원가입
+        <span class="icon2"></span>
+      </em>
+    </button>
+    <!-- //sec5 -->
+    
+  </section>
+  <!-- //컨테이너 -->
+
+  <script src="../hera/js/hera_login.js"></script>
+</body>
+</html>
